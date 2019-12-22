@@ -1,0 +1,99 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.upper-row{
+    width:100%;
+}
+
+.main{
+    
+    margin: 180px;
+    margin-top: 20px;;
+    margin-bottom: 0;
+    border-style:double;
+    border-width:15px;
+    border-color:#5a438b;
+}
+.tops{
+    margin-top: 10px;
+    font-family:"roboto";
+    font-size:30px;
+    color:#ad882a;
+    font-weight: 300;
+}
+
+.praxis-title{
+    margin-top:-25px;
+    list-style:none;
+    font-family:"Merriweather";
+    font-size:40px;
+    color:#454545;
+    text-align: center;
+}
+.praxis{
+    list-style:none;
+    font-family:"Merriweather";
+    font-size:10px;
+    color:#454545;
+    text-align: center;
+    
+}
+.own{
+    margin-top:50px;
+    font-family:"Merriweather";
+    font-size:30px;
+    color:#454545;
+    text-align: center; 
+}
+.content{
+    font-family: "roboto";
+    font-size:19px;
+    color:black;
+    margin:60px 60px 0px 60px;
+    padding-left:40px;
+    
+}
+.content1{
+    font-family: "roboto";
+    font-size:19px;
+    color:black;
+    
+    
+}
+.content2{
+    font-family: "roboto";
+    font-size:19px;
+    color:black;
+    
+}
+.content3{
+    font-family: "roboto";
+    font-size:16px;
+    color:black;
+   
+  
+}
+.content4{
+    font-family: "roboto";
+    font-size:16px;
+    color:black;
+   
+  
+}
+.font-specifications{
+   font-family:"roboto";
+   font-size:20px;
+}
+
+.more{
+    font-family: "roboto";
+    font-size:16px;
+   
+}
+.less{
+    font-family: "roboto";
+    font-size:16px;
+   
+}
+

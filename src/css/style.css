@@ -1,0 +1,46 @@
+body{
+	font-family: "Nunito Sans", sans-serif;
+	
+	
+}
+/*Navbar*/
+.bit_nav1{
+	margin-left: 290px;
+
+}
+.bit_nav{
+text-decoration: none;
+color:#B0413E;
+
+padding-right:45px;
+letter-spacing: 1px;
+font-family: 'Nunito Sans', sans-serif;
+font-size: 20px;
+}
+.bit_nav:hover{
+color:#bd4642; 
+}
+
+.bit_button{
+	text-decoration: none;
+	color: #fff;width:90px;
+	margin-left:25px;
+	background-color:#bd4642;
+	font-size: 16px;
+	font-family: 'Nunito Sans', sans-serif;
+	box-shadow: 1px 1px 5px #CEE5F2;
+	border: none;
+}
+.bit_button:hover{
+	color: #bd4642;
+	background: #fff;
+	border: 1px solid #bd4642;
+}
+.type{
+   font-size:20px; 
+	color: #fff;
+	margin-top: 120px;
+	margin-left: 25px;
+	
+  
+}

@@ -1,0 +1,376 @@
+
+
+
+/* --------------------------
+:: 1.0 Base CSS Start
+-------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    
+	font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ 
+	font-family: "Nunito Sans", sans-serif;
+	
+	
+
+    font-weight: 700;
+    color: #b0413e;
+    line-height: 1.2;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    font-weight: 700;
+    text-decoration: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #abadbe;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 1.9;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section_padding_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section_padding_100_0 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+.section_padding_100_50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.section_padding_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.section_padding_50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section_padding_50_20 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.section_padding_150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.section_padding_200 {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section_padding_0_100 {
+    padding-top: 0;
+    padding-bottom: 100px;
+}
+
+.section_padding_70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.section_padding_0_50 {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-150 {
+    margin-top: 150px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+#preloader {
+    overflow: hidden;
+    background-color: #211b31;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.mosh-preloader {
+    overflow: hidden;
+    -webkit-animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+    animation: 3000ms linear 0s normal none infinite running mosh-preloader;
+    background-color: transparent;
+    border-color: #f1f2f3 #f1f2f3 #4a7aec;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    height: 50px;
+    left: calc(50% - 25px);
+    position: relative;
+    top: calc(50% - 25px);
+    width: 50px;
+    z-index: 9;
+}
+
+@-webkit-keyframes mosh-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes mosh-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* -------------------------
+:: 9.0 Workflow Area
+------------------------- */
+
+.workflow-img {
+    position: relative;
+    z-index: -10;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.single-workflow-area > h2 {
+    font-size: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 47px;
+    flex: 0 0 47px;
+    width: 47px!important;
+    height: 47px!important;
+    text-align: center;
+    background-color: #f3f5f9;
+    line-height: 47px;
+    border-radius: 50%;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.workflow-content h4 {
+    margin-bottom: 30px;
+}
+
+.single-workflow-area:hover h2 {
+    background-color:#B0413E;
+    color: #fff;
+}
+
+.workflow-slides-area {
+    position: relative;
+    z-index: 99;
+    top: -100px;
+}
+
+.mosh-workflow-slides .owl-dots {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.mosh-workflow-slides .owl-dot {
+    background-color: #daddeb;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 4px;
+    display: inline-block;
+}
+
+.mosh-workflow-slides .owl-dot.active {
+    background-color: #b0413e;
+}
+/* -------------------------
+:: 6.0 Features Area
+------------------------- */
+
+.mosh-features-area {
+    background-color: #211b31;
+    position: relative;
+    z-index: 1;
+}
+
+.features-img > img {
+    width: 40%;
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    z-index: 9;
+}
+
+.mosh-features-area .section-heading {
+    margin-bottom: 60px;
+}
+
+.mosh-features-area .section-heading h2 {
+    color: #fff;
+}
+
+.barfiller {
+    background: #f4f4f4;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.barfiller .fill {
+    display: block;
+    position: relative;
+    width: 0px;
+    height: 100%;
+    background: #4a7aec;
+    z-index: 1;
+}
+
+.barfiller .tipWrap {
+    display: none;
+}
+
+.barfiller .tip {
+    margin-top: -35px;
+    padding: 2px 4px;
+    font-size: 15px;
+    color: #4a7aec;
+    left: 0px;
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    font-weight: 500;
+}
+
+.barfiller .tip:after {
+    display: none;
+}
+
+.single_progress_bar p {
+    margin-bottom: 10px;
+}
+
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DigiCert</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        body{
+          font-family: "Nunito Sans", sans-serif;
+  
+            /*  background:#f8f8f8;*/
+        }
+        .display-hide{
+            display: none;
+        }
+        .nav-item .logout:hover{
+    background: #fff;
+    border: 1px solid #b0413e;
+    color: #b0413e;
+  }
+    .bit_nav1{
+        margin-left: 290px;
+
+    }
+    .bit_nav{
+    text-decoration: none;
+    color:#B0413E;
+
+    padding-right:45px;
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    }
+    .bit_nav:hover{
+    color:#bd4642; 
+    }
+
+    .bit_button{
+        text-decoration: none;
+        color: #fff;width:90px;
+        margin-left:25px;
+        background-color:#bd4642;
+        font-size: 16px;
+        font-family: 'Nunito Sans', sans-serif;
+        box-shadow: 1px 1px 5px #CEE5F2;
+        border: none;
+    }
+    .bit_button:hover{
+        color: #bd4642;
+        background: #fff;
+        border: 1px solid #bd4642;
+    }
+    .type{
+       font-size:20px; 
+        color: #fff;
+        margin-top: 120px;
+        margin-left: 25px;
+
+
+    }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar-light bg-light" style="padding:20px;font-size:16px;">
+  <div class="container-fluid">
+        <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active bit_nav bit_nav1" href="http://localhost:3000/issuer_first.html" style="color:#B0413E ">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active bit_nav" href="" style="color:#B0413E ">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active bit_nav" href="http://localhost/certificate/src/issues.php" style="color:#B0413E ">Issue</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active bit_nav" href="http://localhost/certificate/src/history.php" style="color:#B0413E ">History</a>
+                </li>
+      <li class="nav-item ">
+        <a class="logout btn bit_button" href="" style="color:#fff;background-color:#b0413e; margin-top:5px;">Logout</a>
+      </li>
+
+
+    </ul>
+    </div>
+  </nav>
+    <div class="container-fluid">
+      <div class="row">
+            <div class="col-md-5" style="padding: 50px;">
+                <div class="form-title">
+                        <div class="category-heading text-center">
+                            <h3  class="text-heading" style="font-size: 30px; font-family: 'Nunito Sans', sans-serif;">Add Student</h3>
+                            <div style="width: 50px; height: 3px; background:#b0413e; margin: 0 auto 30px;"></div>
+                        </div>
+                        
+                        <!--End of category-heading-->
+                    </div>
+                    <!--End of form-title-->
+                    <form onSubmit="App.addStudent(); return false; " action="#">
+              
+              <div class="form-group">
+               <label for="" style="font-weight: 400;">Full Name</label>
+                    <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
+
+                <input class="form-control" type="text" name="" id="first_name" placeholder="full name" >
+
+                <p class="text-center" id ="first_name_disp"></p>
+              </div>
+
+
+              <div class="form-group">
+               <label for="" style="font-weight: 400;">Rank</label>
+                    <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
+                <input class="form-control" type="text" name="" id="rank" placeholder="last name" >
+              </div>
+
+
+              <div class="form-group">
+               <label for="" style="font-weight: 400;">Field</label>
+                    <div style="width: 30px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
+                <input class="form-control" type="text" name="" id="field" placeholder="field" >
+
+              </div>
+               <div class="form-group">
+               <label for="" style="font-weight: 400;">Class</label>
+                    <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
+                <input class="form-control" type="text" name="" id="class" placeholder="Class" >
+              </div>
+
+              <div class="form-group">
+               <label for="" style="font-weight: 400;">Email</label>
+                    <div style="width: 50px; height: 3px; background:#b0413e; margin-bottom: 15px;"></div>
+                <input class="form-control" type="text" name="" id="email" placeholder="email" >
+              </div>
+
+
+              <button type="submit" class="btn" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2); background-color: #b0413e; padding: 10px; width: 25%; margiin-left: 30px; margin-top:15px; color: white;">Submit</button>
+              <hr />
+
+             
+          </form>
+                    <strong id="dip" class="text-center" style="color:green; font-size: 18px "></strong>
+
+                     <p   class="text-center" style="color:darkblue">Current Account</p>
+                      <p id="accountAddress" class="text-center"style="color:red; font-size: 18px"></p>
+
+
+        
+            </div>
+              
+              <div class="col-md-7" style="background-color: #b0413e; padding: 50px; bottom:0; right:0; top:0;">
+                    <div class="certificate-image" style="padding: 50px;">
+                    <div class="image-outer" style="padding: 20px; padding-left: 60px;">
+<!--                        <div class="image-inner">-->
+                            <img src="images/t4.png" alt="Work" class="img-responsive" >
+<!--                        </div>-->
+                    </div>
+                    </div><!--Certifiacte Image-->
+                </div>
+
+              
+                      
+        
+      </div>
+
+      
+    </div>
+
+
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+      var commitee_name=localStorage.getItem("commitee_name_new");
+      //window.alert(commitee_name);
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
